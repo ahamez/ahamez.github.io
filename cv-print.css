@@ -1,0 +1,456 @@
+/* @override http://www.alexandrehamez.fr/cv-print.css */
+
+body
+{
+  font: 10pt "Lucida Grande", Lucida, Verdana, sans-serif;
+  color: black;
+}
+
+h1
+{
+/*  font-size: 18pt;*/
+}
+
+h2
+{
+  font-size: 14pt;
+}
+
+h3
+{
+  font-size: 10pt;
+}
+
+h4
+{
+  font-size: 10pt;
+}
+
+strong
+{
+  font-weight: bolder;
+}
+
+a
+{
+  color: inherit;
+  text-decoration: none;
+
+}
+
+ul
+{
+  list-style-type: square;
+  text-align: justify;
+}
+
+ul ul
+{
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+li li
+{
+  margin-left: -25px;
+}
+
+li
+{
+  padding-bottom: 2px;
+}
+
+.spacer
+{
+  clear: both;
+  border: 0;
+  color: black;
+}
+
+#page
+{
+  background-color: white;
+}
+
+#footer
+{
+  display: none;
+}
+
+
+#header > .spacer
+{
+  border-bottom: 1px solid black;
+  margin-bottom: 50px;
+}
+
+#resume-title
+{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+#dr
+{
+  font-size: 16px;
+}
+
+#name
+{
+  font-size: 28px;
+}
+
+#me
+{
+  float: left;
+  font-size: 22pt;
+}
+
+#email
+{
+  float: left;
+}
+
+#phone
+{
+  float: right;
+}
+
+
+.nodisplay
+{
+  display:none;
+}
+
+#me + #email
+{
+  padding-top: 15px;
+}
+
+#toc
+{
+  text-align: center;
+  margin-bottom: 50px;
+  display: none;
+}
+
+/* @group Sections */
+
+.section
+{
+
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-right: 45px;
+  padding-bottom: 5px;
+
+  width: 590px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.section-title
+{
+  font-variant: small-caps;
+}
+
+.subsection
+{
+  
+}
+
+.subsection-title
+{
+  
+}
+
+.section-content
+{
+  
+}
+
+/* @end */
+
+/* @group Job */
+
+.job
+{
+  
+}
+
+.job-header
+{
+  margin-left: 2px;
+}
+
+.job-place
+{
+  font-style: italic;
+}
+
+.job-place:before
+{
+  content: " @";
+}
+
+.job-title
+{
+  font-weight: bold;
+}
+
+.job-date
+{
+  color: gray;
+  float: right;
+}
+
+.job-date:before
+{
+  content: "[ ";
+}
+
+.job-date:after
+{
+  content: " ]";
+}
+
+
+.job-description
+{
+  margin-left: 10px;
+  text-align: justify;
+}
+
+/* @end */
+
+
+
+
+/* @group Projects */
+
+.project
+{ 
+}
+
+.project-name
+{
+  font-weight: bold;
+}
+
+.project-short:before
+{
+  content: "/ ";
+}
+
+.project-time
+{
+  float: right;
+}
+
+.project-place
+{
+  float: right;
+  font-style: italic;
+}
+
+.project-place:before
+{
+  content: " @";
+}
+
+.project-languages
+{
+}
+
+.project-languages:before
+{
+  content: "/ ";
+}
+
+/*.project-languages:after
+{
+  content: " ";
+}*/
+
+.project-language:after
+{
+  content: ", ";
+}
+
+.project-kloc
+{
+  font-weight: normal;
+  font-style: normal;
+}
+
+.project-kloc:before
+{
+  content: "(";
+}
+
+.project-kloc:after
+{
+  content: " kloc)";
+}
+
+.project-description
+{ 
+}
+
+/* @end */
+
+/* @group Articles */
+
+.bibliography
+{
+}
+
+.article
+{
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.article:before
+{
+}
+
+.article-title
+{
+  font-weight: bold;
+}
+
+.article-title:after
+{
+  content: ".";
+}
+
+
+.article-authors
+{
+  font-style: italic;
+}
+
+.article-first-author
+{
+}
+
+.article-author
+{ 
+}
+
+.article-last-author
+{
+}
+
+.article-author:before
+{
+  content: ", "; 
+}
+
+.article-last-author:before
+{
+  content: " and "; 
+}
+
+.article-date
+{
+  color: gray;
+}
+
+.article-date:before
+{
+  content: "[";
+}
+
+.article-date:after
+{
+  content: "]";
+}
+
+.article-conf
+{ 
+}
+
+.article-conf:before
+{
+  content: " @";
+}
+
+/* @end */
+
+/* @group Education */
+
+.education-list
+{
+  
+}
+
+.education-item
+{
+}
+
+.education-item-header
+{
+}
+
+.education-item-date
+{
+  color: gray;
+}
+
+.education-item-date:before
+{
+  content: "[";
+}
+
+.education-item-date:after
+{
+  content: "]";
+}
+
+.education-item-mention
+{
+  font-style: normal;
+  font-weight: normal;
+}
+
+.education-item-mention:before
+{
+  content: "/ ";
+}
+
+.education-item-place
+{
+  font-style: italic;
+  float: right;
+}
+
+.education-item-place:before
+{
+  content: " @";
+}
+
+.education-item-title
+{
+  font-weight: bold;
+}
+
+.education-item-description
+{
+  text-indent: 10px;
+}
+
+
+/* @end */
+
+.download
+{
+  display: none;
+}
+
+.file
+{
+}
