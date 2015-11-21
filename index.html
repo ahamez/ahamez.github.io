@@ -217,7 +217,7 @@
 
 <div class="section">
   <h2 class="section-title">
-    Detailed description of some projects
+    Some recent projects
   </h2>
   <div class="section-content" id="projects">
     <ul class="project-list">
@@ -260,50 +260,6 @@
           to provide fast and safe visitor mechanism. Also, it uses type traits, whenever possible,
           to statically choose the best algorithms at compile time. Finally, great care is taken to
           allocate and use memory in a contiguous way to ensure caches are used at their best.
-
-        </p>
-      </li>
-      <li class="project">
-        <div class="project-header">
-          <a name="project-filedb" id="project-filedb"></a> <span class="project-name">filedb</span> <span class="project-short">on-disk database</span> <span class="project-languages"><span class="project-last-language">C++</span></span> <span class="project-place"><a href="http://www.laas.fr/2-27719-Home.php">LAAS/CNRS</a></span>
-        </div>
-        <p class="project-description">
-          <a href="http://en.wikipedia.org/wiki/Model_checking">Model checking</a> is a memory
-          intensive task as it explores all states a model can reach. As such, using hard drives
-          can be a solution when there is not enough memory. Filedb is a small on-disk database
-          which stores states, very much in the NoSQL way, but dedicated to this very particular
-          task (there is no need to provide deletion or modification).<br/> While a prototype,
-          emphasis has been put on its configurability: it's possible to define how a database is
-          structured though sub-directories and files, to use the most adapted layout when data is
-          of fixed-sized or not, etc.
-        </p>
-      </li>
-      <li class="project">
-        <div class="project-header">
-          <a name="project-libdmc" id="project-libdmc"></a> <span class="project-name">libdmc</span> <span class="project-short">generic library for distributed and parallel model checking</span> <span class="project-languages"><span class="project-last-language">C++</span></span> <span class="project-place"><a href="http://www.lip6.fr/?LANG=en">LIP6</a></span>
-        </div>
-        <p class="project-description">
-          A way to overcome the high memory and CPU requirements of model checking is to use the
-          resources of clusters and multicore architectures. libdmc is a library that provides
-          model checkers designers a way to transparently use such resources. It thus provides
-          generic interfaces and deployment scripts. It does not depend on other networking
-          libraries. Near-linear speedups were obtained on up to 128 nodes. Its design based on the
-          proxy design pattern provides a clear separation between the state space generation
-          algorithm and the network and multithreading parts.
-
-        </p>
-      </li>
-      <li class="project">
-        <div class="project-header">
-          <span class="project-name"><a href="http://move.lip6.fr/software/CPNAMI/MANUAL_SERV/modeling_facil.html#PNasmb">PetriScript</a></span> <span class="project-short">domain specific language</span> <span class="project-languages"><span class="project-last-language">Ada</span></span> <span class="project-place"><a href="http://www.upmc.fr/en/index.html">Paris 6</a></span>
-        </div>
-        <p class="project-description">
-          <a href="http://move.lip6.fr/software/CPNAMI">CPN-AMI</a> is a platform dedicated to
-          formal verification of Petri nets. However, its graphical clients do not permit to create
-          and assemble large Petri nets or to generate them using patterns. PetriScript is a DSL
-          built for this purpose. Some of its features are that it uses the <a
-          href="http://www.gnu.org/software/m4">M4</a> language as its preprocessor and that it
-          proposes list comprehensions using regular expressions.
 
         </p>
       </li>
