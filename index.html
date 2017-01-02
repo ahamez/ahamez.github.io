@@ -83,7 +83,7 @@
                 </li>
                 <li>Teaching (software engineering, C, Python), internships supervision.
                 </li>
-                <li>C++ training (moving to C++11/14, software engineering, parallel programming)
+                <li><a href="http://www.slideshare.net/ahamez/c-1114">C++ training</a> (moving to C++11/14, software engineering, parallel programming)
                 </li>
               </ul>
             </li>
@@ -128,7 +128,48 @@
             </li>
           </ul>
         </div>
-      </div><!-- %%%%%%%%%%%%%%%%%%%%%% -->
+      </div>
+
+      <!-- %%%%%%%%%%%%%%%%%%%%%% -->
+
+      <div class="section">
+        <h2 class="section-title">
+          Some recent open-source projects
+        </h2>
+        <div class="section-content" id="projects">
+          <ul class="project-list">
+            <li class="project">
+              <div class="project-header">
+                <a name="project-protox" id="project-protox"></a> <span class="project-name"><a href="https://github.com/ahamez/protox">protox</a></span> <span class="project-short">library for Protocol Buffers</span> <span class="project-languages"><span class="project-last-language">Elixir</span></span>
+              </div>
+              <p class="project-description">
+                Protocol buffers are Google's language-neutral, platform-neutral, specification for data serialization. While Google provides implementations for a lot of languages, Elixir is not one of them. Protox is a pure Elixir implementation of Protocol Buffers: written using meta-programming, it provides very good performances and expose data with standard structures.
+              </p>
+            </li>
+            <li class="project">
+              <div class="project-header">
+                <a name="project-pnmc" id="project-pnmc"></a> <span class="project-name"><a href="https://github.com/ahamez/pnmc">pnmc</a></span> <span class="project-short">efficient model checker for Petri nets</span> <span class="project-languages"><span class="project-last-language">C++14</span></span>
+              </div>
+              <p class="project-description">
+                <a href="http://en.wikipedia.org/wiki/Model_checking">Model checkers</a> are a category of tools that automatically explore all the states of a system, given a formal description, to verify properties (e.g. "Does my system have a deadlock?"). It's a memory and CPU intensive process, making C++ the right language. This tool features parsers for several Petri net formats, JSON and DOT export of results; it relies on the Boost libraries to provide portability.<br />
+                This tool had the second place at the <a href="http://mcc.lip6.fr">Model Checking Contest (2014 and 2015 editions)</a>. On all given systems' descriptions ("models"), it was the tool with the smallest memory footprint on 50% of models, and was the fastest on 75% of the models. All in all, it was the tool which was able to handle the maximum number of models.
+              </p>
+            </li>
+            <li class="project">
+              <div class="project-header">
+                <a name="project-libsdd" id="project-libsdd"></a> <span class="project-name"><a href="https://github.com/ahamez/libsdd">libsdd</a></span> <span class="project-short">generic library for decision diagrams</span> <span class="project-languages"><span class="project-language">C++14</span></span>
+              </div>
+              <p class="project-description">
+                This library is an implementation of the <a href="http://dx.doi.org/10.1007/11562436_32">Hierarchical Set Decision Diagram</a> (SDD) data structure. SDDs provide the ability to store arbitrary types, making this structure a generic one. C++ templates are a natural way of implementing SDDs, thus providing efficient and generic algorithms. Python bindings are also provided (using <a href="http://www.boost.org/doc/libs/release/libs/python/doc">Boost.Python</a>) to ease the manipulation of SDDs, as well as to permit fast prototyping of new high-level algorithms.<br />
+                It features a custom reference-counted garbage collector, which is required by the nature of decision diagrams, and a <a href="https://github.com/ahamez/libsdd/blob/master/sdd/mem/variant.hh">custom tagged union</a> (like <a href="www.boost.org/doc/libs/release/libs/variant/">Boost.Variant</a>) to provide fast and safe visitor mechanism. Also, it uses type traits, whenever possible, to statically choose the best algorithms at compile time. Finally, great care is taken to allocate and use memory in a contiguous way to ensure caches are used at their best.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- %%%%%%%%%%%%%%%%%%%%%% -->
+
       <div class="section">
         <h2 class="section-title">
           Education
@@ -164,7 +205,10 @@
             </li>
           </ul>
         </div>
-      </div><!-- %%%%%%%%%%%%%%%%%%%%%% -->
+      </div>
+
+      <!-- %%%%%%%%%%%%%%%%%%%%%% -->
+
       <div class="section">
         <h2 class="section-title">
           Skills
@@ -209,41 +253,7 @@
           </div>
         </div>
       </div>
-      <div class="section">
-        <h2 class="section-title">
-          Some recent open-source projects
-        </h2>
-        <div class="section-content" id="projects">
-          <ul class="project-list">
-            <li class="project">
-              <div class="project-header">
-                <a name="project-protox" id="project-protox"></a> <span class="project-name"><a href="https://github.com/ahamez/protox">protox</a></span> <span class="project-short">library for Protocol Buffers</span> <span class="project-languages"><span class="project-last-language">Elixir</span></span>
-              </div>
-              <p class="project-description">
-                Protocol buffers are Google's language-neutral, platform-neutral, specification for data serialization. While Google provides implementations for a lot of languages, Elixir is not one of them. Protox is a pure Elixir implementation of Protocol Buffers: written using meta-programming, it provides very good performances and expose data with standard structures.
-              </p>
-            </li>
-            <li class="project">
-              <div class="project-header">
-                <a name="project-pnmc" id="project-pnmc"></a> <span class="project-name"><a href="https://github.com/ahamez/pnmc">pnmc</a></span> <span class="project-short">efficient model checker for Petri nets</span> <span class="project-languages"><span class="project-last-language">C++14</span></span>
-              </div>
-              <p class="project-description">
-                <a href="http://en.wikipedia.org/wiki/Model_checking">Model checkers</a> are a category of tools that automatically explore all the states of a system, given a formal description, to verify properties (e.g. "Does my system have a deadlock?"). It's a memory and CPU intensive process, making C++ the right language. This tool features parsers for several Petri net formats, JSON and DOT export of results; it relies on the Boost libraries to provide portability.<br />
-                This tool had the second place at the <a href="http://mcc.lip6.fr">Model Checking Contest (2014 and 2015 editions)</a>. On all given systems' descriptions ("models"), it was the tool with the smallest memory footprint on 50% of models, and was the fastest on 75% of the models. All in all, it was the tool which was able to handle the maximum number of models.
-              </p>
-            </li>
-            <li class="project">
-              <div class="project-header">
-                <a name="project-libsdd" id="project-libsdd"></a> <span class="project-name"><a href="https://github.com/ahamez/libsdd">libsdd</a></span> <span class="project-short">generic library for decision diagrams</span> <span class="project-languages"><span class="project-language">C++14</span></span>
-              </div>
-              <p class="project-description">
-                This library is an implementation of the <a href="http://dx.doi.org/10.1007/11562436_32">Hierarchical Set Decision Diagram</a> (SDD) data structure. SDDs provide the ability to store arbitrary types, making this structure a generic one. C++ templates are a natural way of implementing SDDs, thus providing efficient and generic algorithms. Python bindings are also provided (using <a href="http://www.boost.org/doc/libs/release/libs/python/doc">Boost.Python</a>) to ease the manipulation of SDDs, as well as to permit fast prototyping of new high-level algorithms.<br />
-                It features a custom reference-counted garbage collector, which is required by the nature of decision diagrams, and a <a href="https://github.com/ahamez/libsdd/blob/master/sdd/mem/variant.hh">custom tagged union</a> (like <a href="www.boost.org/doc/libs/release/libs/variant/">Boost.Variant</a>) to provide fast and safe visitor mechanism. Also, it uses type traits, whenever possible, to statically choose the best algorithms at compile time. Finally, great care is taken to allocate and use memory in a contiguous way to ensure caches are used at their best.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div><!-- %%%%%%%%%%%%%%%%%%%%%% -->
+
       <div class="section">
         <h2 class="section-title">
           Bibliography
@@ -281,7 +291,10 @@
           </li>
         </ul>
       </div>
-    </div><!-- %%%%%%%%%%%%%%%%%%%%%% -->
+    </div>
+
+    <!-- %%%%%%%%%%%%%%%%%%%%%% -->
+
     <div id="footer"></div>
   </body>
 </html>
