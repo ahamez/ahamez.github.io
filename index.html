@@ -41,7 +41,7 @@
             Highly proficient in C++ (11/14), I have a strong interest in writing CPU and memory efficient softwares. I'm also keen on meta-programming using templates given the performances and safeties it offers. When high-reliability is required on servers, I use the <a href="http://elixir-lang.org">Elixir</a> language, which runs on the Erlang VM.
           </div>
           <div class="subsection">
-            Finally, what I enjoy the most is writing efficient and well-tested libraries to be used by other developpers.
+            Finally, what I enjoy the most is writing efficient and well-tested frameworks or libraries to be used by other developpers.
           </div>
         </div>
       </div><!-- %%%%%%%%%%%%%%%%%%%%%% -->
@@ -138,6 +138,7 @@
         </h2>
         <div class="section-content" id="projects">
           <ul class="project-list">
+
             <li class="project">
               <div class="project-header">
                 <a name="project-protox" id="project-protox"></a> <span class="project-name"><a href="https://github.com/ahamez/protox">protox</a></span> <span class="project-short">library for Protocol Buffers</span> <span class="project-languages"><span class="project-last-language">Elixir</span></span>
@@ -146,6 +147,16 @@
                 Protocol buffers are Google's language-neutral, platform-neutral, specification for data serialization. While Google provides implementations for a lot of languages, Elixir is not one of them. Protox is a pure Elixir implementation of Protocol Buffers: written using meta-programming, it provides very good performances and expose data with standard structures.
               </p>
             </li>
+
+            <li class="project">
+              <div class="project-header">
+                <a name="project-netcode" id="project-netcode"></a> <span class="project-name"><a href="https://github.com/ahamez/netcode">netcode</a></span> <span class="project-short">library for Network Coding</span> <span class="project-languages"><span class="project-last-language">C++11</span></span>
+              </div>
+              <p class="project-description">
+                Network coding is a technique to improve network efficiency through the usage of redundancy packets to avoid retransmissions. Netcode is a library which implements network coding using Galois fields. It provides C bindings.
+              </p>
+            </li>
+
             <li class="project">
               <div class="project-header">
                 <a name="project-pnmc" id="project-pnmc"></a> <span class="project-name"><a href="https://github.com/ahamez/pnmc">pnmc</a></span> <span class="project-short">efficient model checker for Petri nets</span> <span class="project-languages"><span class="project-last-language">C++14</span></span>
@@ -160,10 +171,11 @@
                 <a name="project-libsdd" id="project-libsdd"></a> <span class="project-name"><a href="https://github.com/ahamez/libsdd">libsdd</a></span> <span class="project-short">generic library for decision diagrams</span> <span class="project-languages"><span class="project-language">C++14</span></span>
               </div>
               <p class="project-description">
-                This library is an implementation of the <a href="http://dx.doi.org/10.1007/11562436_32">Hierarchical Set Decision Diagram</a> (SDD) data structure. SDDs provide the ability to store arbitrary types, making this structure a generic one. C++ templates are a natural way of implementing SDDs, thus providing efficient and generic algorithms. Python bindings are also provided (using <a href="http://www.boost.org/doc/libs/release/libs/python/doc">Boost.Python</a>) to ease the manipulation of SDDs, as well as to permit fast prototyping of new high-level algorithms.<br />
-                It features a custom reference-counted garbage collector, which is required by the nature of decision diagrams, and a <a href="https://github.com/ahamez/libsdd/blob/master/sdd/mem/variant.hh">custom tagged union</a> (like <a href="www.boost.org/doc/libs/release/libs/variant/">Boost.Variant</a>) to provide fast and safe visitor mechanism. Also, it uses type traits, whenever possible, to statically choose the best algorithms at compile time. Finally, great care is taken to allocate and use memory in a contiguous way to ensure caches are used at their best.
+                This library is an implementation of the <a href="http://dx.doi.org/10.1007/11562436_32">Hierarchical Set Decision Diagram</a> (SDD) data structure. SDDs provide the ability to store arbitrary types, making this structure a generic one. C++ templates are a natural way of implementing SDDs, thus providing efficient and generic algorithms.
+                It features a custom reference-counted garbage collector, which is required by the nature of decision diagrams, and a <a href="https://github.com/ahamez/libsdd/blob/master/sdd/mem/variant.hh">custom tagged union</a> (like <a href="www.boost.org/doc/libs/release/libs/variant/">Boost.Variant</a>) to provide a fast and safe visitor mechanism. Also, it uses type traits, whenever possible, to statically choose the best algorithms at compile time. Finally, great care is taken to allocate and use memory in a contiguous way to ensure caches are used at their best.
               </p>
             </li>
+
           </ul>
         </div>
       </div>
